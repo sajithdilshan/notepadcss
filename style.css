@@ -3,12 +3,20 @@
 	margin: 0;
 	padding: 0;
 }
-
+body{
+	background: rgb(252,254,255);
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(252,254,255,1) 0%, rgba(239,239,239,1) 88%, rgba(244,244,244,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(252,254,255,1)), color-stop(88%,rgba(239,239,239,1)), color-stop(100%,rgba(244,244,244,1)));
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(252,254,255,1) 0%,rgba(239,239,239,1) 88%,rgba(244,244,244,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover,  rgba(252,254,255,1) 0%,rgba(239,239,239,1) 88%,rgba(244,244,244,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover,  rgba(252,254,255,1) 0%,rgba(239,239,239,1) 88%,rgba(244,244,244,1) 100%);
+	background: radial-gradient(ellipse at center,  rgba(252,254,255,1) 0%,rgba(239,239,239,1) 88%,rgba(244,244,244,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfeff', endColorstr='#f4f4f4',GradientType=1 );
+}
 .container{
 	margin: 20px auto 0 auto;
 	width: 600px;
 	height: 550px;
-	background-color: #fff;
 }
 
 #notepad{
@@ -112,6 +120,5 @@ textarea:focus{
 }
 #author a:hover{
 	color: #08c;
-	/*text-shadow: #08c 0 0 2px;*/
 	text-decoration:underline;
 }
